@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+var weather;
+$(document).ready(function() {
+    $.getJSON("weather_data.json", function(json) {
+        weather = json;
+    });
+    console.log(weather['022015']['afternoon']);
+});
+</script>
+</head>
+<body>
+
+</body>
+</html>

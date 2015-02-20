@@ -1,0 +1,38 @@
+{
+    "022015": {
+        "morning": {
+            "temp": 45,
+            "conditions": "cloudy"
+        },
+        "afternoon": {
+            "temp": 60,
+            "conditions": "partly cloudy"
+        },
+        "evening": {
+            "temp": 52,
+            "conditions": "cloudy"
+        },
+        "night": {
+            "temp": 41,
+            "conditions": "foggy"
+        }
+    },
+    "022115": {
+        "morning": {
+            "temp": 51,
+            "conditions": "partly cloudy"
+        },
+        "afternoon": {
+            "temp": 80,
+            "conditions": "sunny"
+        },
+        "evening": {
+            "temp": 63,
+            "conditions": "sunny"
+        },
+        "night": {
+            "temp": 55,
+            "conditions": "partly cloudy"
+        }
+    },
+}
