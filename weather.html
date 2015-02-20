@@ -5,10 +5,10 @@
 <script type="text/javascript">
 var weather;
 $(document).ready(function() {
-    $.getJSON("weather_data.json", function(json) {
+    $.getJSON("https://rawgit.com/DevelopersGuild/weatherapp_tutorial/master/weather_data.json", function(json) {
         weather = json;
+        console.log(weather['022015']['afternoon']);
     });
-    console.log(weather['022015']['afternoon']);
 });
 </script>
 </head>
