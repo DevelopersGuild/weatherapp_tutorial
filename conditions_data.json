@@ -1,4 +1,5 @@
 {
-    "partly cloudy": "http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/wxicon/svgz/partly-cloudy.svgz"
-
+    "partly cloudy": "http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/wxicon/svgz/partly-cloudy.svgz",
+    "sunny": "https://openclipart.org/image/800px/svg_to_png/170678/sunny.png",
+    "cloudy": "http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/wxicon/svgz/cloudy.svgz"
 }

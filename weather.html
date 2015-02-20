@@ -3,21 +3,22 @@
     <title></title>
 <style type="text/css">
     body {
-        display: inline-block;
+        display: block;
         position: relative;
         text-align: center;
     }
     .widget {
         padding:50px;
         width: auto;
-        background-color: black;
-        color:white;
-        font-size: 20px;
+        background-color: white;
+        color:black;
+        font-size: 30px;
         font-family: Helvetica;
         position: relative;
+        display: inline-block;
     }
     .weatherimg {
-        height: 100px;
+        height: 300px;
         width:auto;
         margin:30px;
     }
@@ -28,7 +29,9 @@
     <div class="widget">
         <img class="weatherimg">
         <p>Current weather is:</p>
-        <span class="temp"></span><span> degrees F and </span><span><span class="conditions"></span>
+        <span class="temp"></span>
+        <span> degrees F and </span>
+        <span class="conditions"></span>
     </div>
 
 
@@ -42,7 +45,7 @@ $(document).ready(function() {
     });
     $.getJSON("https://rawgit.com/DevelopersGuild/weatherapp_tutorial/master/conditions_data.json", function(json) {
         conditions = json;
-        $('.weatherimg').attr('src', conditions['partly cloudy'] )
+        $('.weatherimg').attr('src', conditions[weather['022015']['afternoon']['conditions']] )
     })
 });
 </script>
