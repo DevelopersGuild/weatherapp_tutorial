@@ -1,18 +1,51 @@
 <html>
 <head>
     <title></title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<style type="text/css">
+    body {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+    }
+    .widget {
+        padding:50px;
+        width: auto;
+        background-color: black;
+        color:white;
+        font-size: 20px;
+        font-family: Helvetica;
+        position: relative;
+    }
+    .weatherimg {
+        height: 100px;
+        width:auto;
+        margin:30px;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+    <div class="widget">
+        <img class="weatherimg">
+        <p>Current weather is:</p>
+        <span class="temp"></span><span> degrees F and </span><span><span class="conditions"></span>
+    </div>
+
+
 <script type="text/javascript">
 var weather;
 $(document).ready(function() {
     $.getJSON("https://rawgit.com/DevelopersGuild/weatherapp_tutorial/master/weather_data.json", function(json) {
         weather = json;
-        console.log(weather['022015']['afternoon']);
+        $('.temp').text(weather['022015']['afternoon']['temp']);
+        $('.conditions').text(weather['022015']['afternoon']['conditions']);
     });
+    $.getJSON("https://rawgit.com/DevelopersGuild/weatherapp_tutorial/master/conditions_data.json", function(json) {
+        conditions = json;
+        $('.weatherimg').attr('src', conditions['partly cloudy'] )
+    })
 });
 </script>
-</head>
-<body>
 
 </body>
 </html>
