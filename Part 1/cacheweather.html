@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title></title>
+<style type="text/css">
+    body {
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+    .widget {
+        padding:50px;
+        width: auto;
+        background-color: white;
+        color:black;
+        font-size: 30px;
+        font-family: Helvetica;
+        position: relative;
+        display: inline-block;
+    }
+    .weatherimg {
+        height: 300px;
+        width:auto;
+        margin:30px;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+    <div class="widget">
+        <img class="weatherimg">
+        <p>Current weather is:</p>
+        <span class="temp"></span>
+        <span> degrees F and </span>
+        <span class="conditions"></span>
+    </div>
+
+
+<script type="text/javascript">
+var weather;
+var todayString;
+
+$(document).ready(function() {
+    $.getJSON("https://rawgit.com/DevelopersGuild/weatherapp_tutorial/master/weather_data.json", function(json) {
+        weather = json;
+        var today = new Date();
+        todayString = (today.getMonth() + 1).toString() + (today.getDate() + 1).toString() + (today.getFullYear().substring(2,3));
+        console.log(todayString);
+
+        
+        $('.temp').text(weather[todayString]['afternoon']['temp']);
+        $('.conditions').text(weather[todayString]['afternoon']['conditions']);
+    });
+    $.getJSON("https://rawgit.com/DevelopersGuild/weatherapp_tutorial/master/conditions_data.json", function(json) {
+        conditions = json;
+        $('.weatherimg').attr('src', conditions[weather[todayString]['afternoon']['conditions']] )
+    })
+});
+</script>
+
+</body>
+</html>

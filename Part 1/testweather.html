@@ -1,0 +1,43 @@
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.temperature').text('70');
+        $('.conditions').text('partly cloudy');
+
+        var img = $("<img>").attr('src', "http://www.fancyicons.com/free-icons/157/android-weather/png/256/cloudy_256.png");
+
+        $('.weatherpicture').append(img);
+    });
+    </script>
+<style type="text/css">
+    body {
+        /*for the font*/
+        color: white;
+        font-family: Helvetica;
+        font-size: 20px;
+
+        position: relative;
+    }
+    .widget {
+        width:300px;
+        background-color: black;
+        padding: 30px;
+
+        position: relative;
+        margin: 0 auto;
+    }
+</style>
+    <title></title>
+</head>
+<body>
+    <div class="widget">
+        <div class="weatherpicture"></div>
+        <p>Current weather is:</p>
+        <span class="temperature"></span>
+        <span> degrees F and conditions are </span>
+        <span class="conditions"></span>
+    </div>
+</body>
+</html>

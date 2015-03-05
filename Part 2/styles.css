@@ -1,0 +1,78 @@
+body {
+    text-align: center;
+    background: url("http://www.peteradamsphoto.com/wp-content/uploads/2013/06/sanjose._DSC5022.web_.jpg");
+    background-size: cover;
+    font-family:Georgia;
+    font-weight:100;
+}
+
+
+.display {
+    margin: 50px 30px;
+    position: relative;
+    padding:40px;
+    background-color: rgba(200,200,200,0.5);
+    height:550px;
+    width:auto;
+
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: inline-flex;
+
+    -webkit-flex-flow: row nowrap;
+    -moz-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+
+    -webkit-align-items: flex-end;
+    -moz-align-items: flex-end;
+    align-items: flex-end;
+    box-shadow: 0px 0px 5px black;
+}
+
+.dayscontainer {
+    position: relative;
+    width:auto;
+    padding: 0;
+}
+
+.singleday {
+    vertical-align: top;
+    padding:25px;
+    margin: 0px 3px;
+    width: 100px;
+    height: 350px;
+    background-color:rgba(150,150,150,0.3);
+    display: inline-block;
+    color:white;
+    box-shadow: 0px 0px 6px rgba(50,50,50,0.1);
+}
+
+.singleday > * {
+    margin:0;
+    margin-top:30px;
+}
+
+.dayname {
+    padding-bottom:12px;
+    border-bottom:2px solid rgba(180,180,180,0.5);
+}
+
+.date {
+    margin-top:15px;
+    border:solid rgba(255,255,255,0.6) 2px;
+    padding:10px;
+    border-radius:10px;
+}
+.conditionspic {
+    width:90px;
+    height:90px;
+}
+
+.conditionsname {
+}
+
+.temperature {
+    margin-top:10px;
+    font-size: 50px;
+    height:50px;
+}
