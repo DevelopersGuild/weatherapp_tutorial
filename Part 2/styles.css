@@ -2,7 +2,7 @@ body {
     text-align: center;
     background: url("http://www.peteradamsphoto.com/wp-content/uploads/2013/06/sanjose._DSC5022.web_.jpg");
     background-size: cover;
-    font-family:Georgia;
+    font-family:Helvetica;
     font-weight:100;
 }
 
@@ -54,18 +54,23 @@ body {
 
 .dayname {
     padding-bottom:12px;
-    border-bottom:2px solid rgba(180,180,180,0.5);
+    border-bottom:3px solid rgba(180,180,180,0.5);
 }
 
 .date {
     margin-top:15px;
-    border:solid rgba(255,255,255,0.6) 2px;
+    border:solid rgba(255,255,255,0.6) 3px;
     padding:10px;
-    border-radius:10px;
+    border-radius:17px;
 }
 .conditionspic {
-    width:90px;
-    height:90px;
+    width:110px;
+    height:110px;
+    border:6px solid rgba(220,220,220,0.8);
+    background-color: white;
+    border-radius: 110px;
+    margin-left:-12px;
+
 }
 
 .conditionsname {
