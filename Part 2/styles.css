@@ -6,7 +6,6 @@ body {
     font-weight:100;
 }
 
-
 .display {
     margin: 50px 30px;
     position: relative;
@@ -14,7 +13,9 @@ body {
     background-color: rgba(200,200,200,0.5);
     height:550px;
     width:auto;
+    box-shadow: 0px 0px 5px black;
 
+    /* for centering the box */
     display: -webkit-inline-flex;
     display: -moz-inline-flex;
     display: inline-flex;
@@ -26,7 +27,6 @@ body {
     -webkit-align-items: flex-end;
     -moz-align-items: flex-end;
     align-items: flex-end;
-    box-shadow: 0px 0px 5px black;
 }
 
 .dayscontainer {
@@ -37,9 +37,9 @@ body {
 
 .singleday {
     vertical-align: top;
-    padding:25px;
+    padding: 50px 25px;
     margin: 0px 3px;
-    width: 100px;
+    width: 115px;
     height: 350px;
     background-color:rgba(150,150,150,0.3);
     display: inline-block;
