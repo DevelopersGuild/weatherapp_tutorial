@@ -14,21 +14,34 @@ body {
     height:550px;
     width:auto;
     box-shadow: 0px 0px 5px black;
-
-    /* for centering the box */
-    display: -webkit-inline-flex;
-    display: -moz-inline-flex;
-    display: inline-flex;
-
-    -webkit-flex-flow: row nowrap;
-    -moz-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-
-    -webkit-align-items: flex-end;
-    -moz-align-items: flex-end;
-    align-items: flex-end;
 }
 
+.location {
+    font-size: 23pt;
+}
+
+.location > span > input {
+    font: inherit;
+    background: none;
+    border: none;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid;
+    text-align: center;
+    outline: none;
+    color: #265AFF;
+    width: inherit;
+}
+
+.location > .city {
+    font-weight: bold;
+    width: 200px;
+}
+
+.location > .state {
+    width: 80px;
+}
 .dayscontainer {
     position: relative;
     width:auto;
@@ -37,7 +50,7 @@ body {
 
 .singleday {
     vertical-align: top;
-    padding: 50px 25px;
+    padding: 5px 25px 40px 25px;
     margin: 0px 3px;
     width: 115px;
     height: 350px;
@@ -63,17 +76,18 @@ body {
     padding:10px;
     border-radius:17px;
 }
-.conditionspic {
+.conditions-img {
     width:110px;
     height:110px;
     border:6px solid rgba(220,220,220,0.8);
     background-color: white;
     border-radius: 110px;
-    margin-left:-12px;
-
+    margin-left:-6px;
+    background-repeat: no-repeat;
+    background-position: 30px;
 }
 
-.conditionsname {
+.conditions-text {
 }
 
 .temperature {
