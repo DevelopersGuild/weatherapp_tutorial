@@ -1,5 +1,5 @@
 var Weather = {
-	host: 'http://localhost:3000/',
+	host: 'http://weather.developersguild.net/',
 	handlers: [],
 	getForecast: function(state, city, callback) {
 		var handler = function(err, data) {
