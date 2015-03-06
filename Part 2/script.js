@@ -5,7 +5,8 @@ $(document).on('ready', function() {
 	var updateView = function(state, city) {
 		Weather.getForecast(state, city, function(error, data) {
 			if(error) {
-				return
+				// TODO: Error handling (notify user)
+				return; 
 			}
 			panels.each(function(index) {
 				var day = data[index];
@@ -28,12 +29,12 @@ $(document).on('ready', function() {
 		var input = $("<input/>", {
 			type : 'text',
 			class: $(this).attr('class')
-		})
+		});
 		var value = $(this).html();
 		$(this).html(input);
 		input.focus().val(value).select().on('keydown', function(e) {
 			if(e.which === 13) {
-				$(this).blur()
+				$(this).blur();
 			}
 		});
 	});
