@@ -21,6 +21,7 @@ var Weather = {
 		var jsonpScript = document.createElement('script');
 		jsonpScript.type = 'text/javascript';
 		jsonpScript.src  = Weather.host + 'tenDay/' + state + '/' + city + '/Weather.handlers[' + handlerId + '].js';
+		// generated script tag: "http://weather.developersguild.net/tenDay/CA/Cupertino/Weather.handlers[some integer].js"
 		document.getElementsByTagName('head')[0].appendChild(jsonpScript);
 	}
 }
