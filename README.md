@@ -1,5 +1,7 @@
 Welcome! Today we'll be pulling in live data from a weather service to add to our weather web app. We've provided the webpage for you to look at and learn from, so feel free to dive under the hood (Web Inspector) to learn how it was constructed. You'll get more familiarized with Javascript in the process.
 
+You can see the end result of this workshop [here](http://rawgit.com/DevelopersGuild/weatherapp_tutorial/master/Part%202/index.html). Try clicking on the city or state name, you can change the location dynamically!
+
 ## To get started:
 1. Click "Download as ZIP" on the right side of this page.
 2. Unzip, open the folder
