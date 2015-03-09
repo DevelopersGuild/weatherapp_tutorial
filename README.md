@@ -13,4 +13,4 @@ We've learned about API's today, and mentioned a data protocol called JSONP. To 
 Get Google Chrome! Its developer tools are really helpful for  styling your page live. Once you've done so, [set up Workspace.](https://developer.chrome.com/devtools/docs/workspaces)
 
 ## Finally,
-- Please sign into the workshop at [bit.ly/dgwebworkshop](bit.ly/dgwebworkshop) so we can stay in touch with you.
+- Please sign into the workshop at [bit.ly/dgwebworkshop](http://bit.ly/dgwebworkshop) so we can stay in touch with you.
