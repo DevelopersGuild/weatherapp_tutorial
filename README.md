@@ -1,3 +1,22 @@
+## MORE Links and resources! for Friday meeting 3/13
+
+Feeling like putting your own spin on the weather app we've built? Awesome! Want to use more data than our Weather API puts out, but don't want to learn how to use an unfamiliar API? Let us know -- we'll put up "fake data" on [JsonStub](https://jsonstub.com/) and you can practice working with API's by fetching the data from it.
+
+Check out these two bucketloads of front-end web design resources, libraries/tools, and tutorials:
+* [dypsilon/frontend-dev-bookmarks](https://github.com/dypsilon/frontend-dev-bookmarks)
+* [moklick/frontend-stuff](https://github.com/moklick/frontend-stuff)
+
+A fun way to learn more about CSS than classes and ID's -- how to work with multiple elements, nested elements, and more:
+[CSS Diner](http://flukeout.github.io/)
+
+If you know a programming language and want to learn the ins and outs of Javascript, here's a good resource:
+[Javascript Garden](http://bonsaiden.github.io/JavaScript-Garden/)
+
+
+
+-----
+_Archived from Friday 3/6_
+
 Welcome! Today we'll be pulling in live data from a weather service to add to our weather web app. We've provided the webpage for you to look at and learn from, so feel free to dive under the hood (Web Inspector) to learn how it was constructed. You'll get more familiarized with Javascript in the process.
 
 You can see the end result of this workshop [here](http://rawgit.com/DevelopersGuild/weatherapp_tutorial/master/Part%202/index.html). Try clicking on the city or state name, you can change the location dynamically!
@@ -16,3 +35,4 @@ Get Google Chrome! Its developer tools are really helpful for  styling your page
 
 ## Finally,
 - Please sign into the workshop at [bit.ly/dgwebworkshop](http://bit.ly/dgwebworkshop) so we can stay in touch with you.
+
